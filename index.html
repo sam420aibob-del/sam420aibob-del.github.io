@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf-Bytes | Official Domain</title>
+    <style>
+        :root {
+            --neon-blue: #00f3ff;
+            --dark-bg: #0a0e17;
+            --panel-bg: #111827;
+            --text-main: #e2e8f0;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .banner-container {
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+            border-bottom: 2px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+        }
+
+        .banner-container img {
+            width: 100%;
+            display: block;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            width: 90%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--neon-blue);
+            box-shadow: 0 0 25px rgba(0, 243, 255, 0.4);
+            margin-top: -95px; /* overlap banner */
+            position: relative;
+            background-color: var(--dark-bg);
+        }
+
+        h1 {
+            color: var(--neon-blue);
+            font-size: 2.5rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+        }
+
+        .blurb {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #94a3b8;
+            max-width: 800px;
+            margin: 20px auto 40px auto;
+        }
+
+        .links-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: var(--panel-bg);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+        }
+
+        .card h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--neon-blue);
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid var(--neon-blue);
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--neon-blue);
+            color: var(--dark-bg);
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="toplogocoffe.jpg" alt="Wolf-Bytes Banner">
+    </div>
+
+    <img src="wolf_bytes_profile.jpg" alt="Wolf-Bytes Logo" class="profile-pic">
+
+    <div class="main-content">
+        <h1>Welcome to Wolf-Bytes</h1>
+        
+        <p class="blurb">
+            Developing sleek, efficient, and reliable software tools. From system utilities to classic arcade remakes, Wolf-Bytes is dedicated to creating high-quality applications with a cyber edge. Explore my latest projects below.
+        </p>
+
+        <div class="links-grid">
+            
+            <div class="card">
+                <h2>System Tools</h2>
+                <p>Check out the official Wolf-Bytes Uninstaller—a clean, lightweight utility for safely removing software without the clutter.</p>
+                <a href="https://github.com/sam420aibob-del/WolfBytes-Uninstaller" class="btn" target="_blank">View Software</a>
+            </div>
+
+            <div class="card">
+                <h2>The Arcade</h2>
+                <p>Jump into the Wolf-Bytes Arcade to play custom games and retro remakes right in your browser.</p>
+                <a href="https://sam420aibob-del.github.io/wolf-bytes-arcade/" class="btn" target="_blank">Play Games</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Wolf-Bytes. All rights reserved.
+    </footer>
+
+</body>
+</html>
